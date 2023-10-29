@@ -13,10 +13,33 @@ model.train()
 
 ### 2. Two-Dimensional SOM
 
-We repeated the experiment, but this time using a two-dimensional array of 100 neurons. The same data set used in the one-dimensional example was used here. Here's an example of how to create and train the data:
+This part of the project focuses on creating and training a two-dimensional Self-Organizing Map (SOM). The code above demonstrates how to use the create_data_a2 function to generate sample data with 1000 data points and then create a two-dimensional SOM model with 100 neurons using the kohonen_2D class. After initializing the model, you can train it using the train() method.
 
 ```python
 data_2D = create_data_a2(1000)
 model_2D = kohonen_2D(data_2D, 100)
 model_2D.train()
 ```
+
+### 3. Neurons on a "Donut" Shape
+
+This experiment explores the placement of neurons on a "donut" shape to represent data. It follows a similar pattern to the previous experiments but focuses on creating a SOM model where neurons are distributed in a circular manner. The create_data_a3 function generates data, and the kohonen_donut class helps in creating and training the SOM model.
+
+```python
+data_donut = create_data_a3(1000)
+model_donut = kohonen_donut(data_donut, 100)
+model_donut.train()
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
